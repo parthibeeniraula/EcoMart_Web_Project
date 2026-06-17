@@ -1,0 +1,265 @@
+:root
+{
+    --green: green;
+    --black:#130f40;
+    --box-shadow:0 8px 16px rgba(0,0,0,0.1);
+    --outline:1.6px solid rgba(0,0,0,0.1);
+}
+
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+
+}
+
+
+html{
+font-family:  sans-serif;
+font-size: 12pt;
+color: var(--text-color);
+text-align: center;
+}
+
+body
+{
+    min-height: 50vh;
+    padding: 0;
+    background: #EBE1D1;
+    margin-top: -18vh;
+    padding-top: 60px;
+     
+}
+
+.page-wrapper{
+   border:27px solid rgba(0,0,0,0.1);
+   background-color: #EBE1D1;
+   padding: 0;
+   box-sizing: border-box;
+  
+}
+
+/* Navbar */
+.header
+{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 11.5px 70px;
+    background: #0D4715;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+
+#navBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navBar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+.header img
+{
+    width: 80px;
+    filter: brightness(0) invert(1);
+    height: auto;
+    display: block;
+}
+
+
+#navBar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #e5e8e1;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+#navBar li a:hover{
+  color: #FE752D;
+  transform: scale(1.2);
+}
+
+#navBar li a::after{
+  content:"";
+  width: 0%;
+  max-width: 100%;
+  height: 2px;
+  background-color: rgb(255, 166, 0) ;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 48%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+#navBar li a#active::after,
+#navBar li a:hover::after{
+  width: 100%;
+}
+
+/*Form part*/
+
+.form{
+box-sizing: border-box;
+height: 100vh;
+width: max(40%, 600px);
+padding: 10px;
+border-radius: 0 20px 20px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.fContainer{
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+font-size: 3rem;
+font-weight: 900;
+color:black ;
+}
+form{
+width: min(400px, 100%);
+margin-top: 20px;
+margin-bottom: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+form > div{
+width: 100%;
+display: flex;
+justify-content: center;
+}
+form input {
+box-sizing: border-box;
+flex-grow: 1;
+min-width: 0;
+height: 50px;
+padding: 1em;
+font: inherit;
+border-radius: 10px;
+border: 2px solid rgb(196, 228, 196);
+background-color: rgb(196, 228, 196)
+
+}
+form input:hover{
+border-color: var(--accent-color);
+}
+form input:focus {
+outline: none;
+border-color: var(--text-color);
+}
+div:has(input:focus) > label{
+background-color: var(--text-color);
+}
+form input::placeholder{
+color: var(--text-color);
+}
+form button{
+margin-top: 10px;
+border: none;
+border-radius: 1000px;
+padding: 0.85em 4em;
+background-color: rgb(87, 87, 219);
+color:white ;
+font: inherit;
+font-weight: 600;
+text-transform: uppercase;
+cursor: pointer;
+transition: 0.5s;
+}
+form button:hover{
+    background-color: black;
+}
+form button:focus{
+    outline: none;
+    background-color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+@media(max-width:1100px){
+    .form{
+        width: min(600px, 100%);
+        
+    }
+}
+
+/* Footer part */
+.foot{
+  background-color: #0D4715;
+  color:#e5e8e1; 
+  box-shadow: var(--box-shadow);
+  margin-top: 0;
+  padding: 40px 20px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 20px;
+    max-width: 1200px;
+    margin: auto;
+    clear: both;
+}
+
+.foot-section h3{
+    color: #e5e8e1;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.foot-section p{
+    font-size: 16px;
+    margin: 6px 0;
+
+}
+
+.socialIcons a{
+     color: #e5e8e1;
+     font-size: 20px;
+     margin-right: 15px;
+     transition: color 0.3s ease;
+
+}
+
+.socialIcons a:hover{
+    color: #FE752D;
+}
+
+.footBottom{
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
+  font-size: 17px;
+}
+
+/* Footer part */
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+     <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+           <header class="header">
+        <img src="picture/Eco mart logo.png" alt="logo">
+        <nav>
+            <ul id="navBar">
+                  <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="blogs.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="AboutUs.html">AboutUs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+                <li><a href="login.html" class="icon" title="login" id="active"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="wishlist.html" class="icon" title="wishlist"><i class="fa-solid fa-heart"></i></a></li>
+                <div class="pro" onclick="window.location.href='cart.html'">
+                <li><a href="cart.html" class="icon" title="cart"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+                </div>
+              </ul>
+        </nav>
+     </header>
+     <div class="fContainer">
+    <div class="form">
+        <h1 >Login </h1>
+        <hr>
+        <form id="form" name="formValid" onsubmit="return validateform()">
+           <div>
+              <input type="email" name="email" id="eInput" placeholder="Enter Your Email">
+           </div>
+           <div>
+               <input  type="password" name="password" id="pInput" placeholder="Enter Your Password">
+           </div>
+           <button type="submit">Login</button>
+        </form>
+        <p>New Here? <a href="signup.html">Create an Account</a></p>
+    </div>
+       </div>
+    </div>
+
+     <!-- footer section -->
+     <footer class="foot">
+        
+        <div class="footCont">
+
+            <div class="foot-section">
+                <h3>HELP</h3>
+                <p>ecomart01@gmail.com</p>
+                <p>+977 9852076544</p>
+                <p>+977 9801256767</p>
+            </div>
+
+            <div class="foot-section">
+               <h3>Social</h3>
+               <div class="socialIcons">
+                 <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                 <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+               </div>
+            </div>
+        </div>
+
+        <div class="footBottom">
+            <p>&copy; 2026 Eco-Mart. All rights reserved.</p>
+        </div>
+     </footer>
+
+</body>
+<!--JS-->
+<script>
+        function validateform(){
+            var y = document.forms['formValid']['email'].value
+            var z = document.forms['formValid']['password'].value
+
+            if(y==""||z==""){
+                alert("Empty Fields!!");
+                return false;
+            }
+             alert("Loged in successfully!");
+                return true;
+            }
+           
+               
+     </script>
+</html>

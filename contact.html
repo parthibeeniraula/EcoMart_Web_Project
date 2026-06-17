@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+
+    <!-- Internal CSS-->
+    <style>
+        .container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color:#EBE1D1 ;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+       <!--NAV BAR-->
+     <header class="header">
+         <img src="image/Eco mart logo.png" alt="">
+         <nav>
+               <ul id="navBar">
+                <li> <a href="home.html">Home</a></li>
+                <li> <a href="product.html">Products</a></li>
+                <li> <a href="blogs.html">Blog</a></li>
+                <li> <a href="research.html">Research</a></li>
+                <li> <a href="AboutUs.html">AboutUs</a></li>
+                <li> <a  class="active" href="contact.html">Contact</a></li>
+                <!-- <li>
+                  <input type="search" placeholder="Search your products here..........">      
+                </li> -->
+                <!-- <li><a href="login.html" class="icon" title="login"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="wishlist.html" class="icon" title="wishlist"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="cart.html" class="icon" title="cart"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+                -->
+               </ul>
+         </nav>
+     </header>
+     <!--BODY PART-->
+     <div class="container">
+        <image>
+<div class="contactInfo">
+            <img src="Cimages/contact-logo.png" alt="Contact Image" width="800px">
+        </div>
+        </image>
+            <div class="contactForm">
+
+               <form name="formValid" onsubmit="validateform()">
+                <h3 class="title">Contact Us</h3>
+                <hr class="contact-hr" style="background-color: white;
+                                               color: white;
+                                                width: 100px;
+                                                 height: 3px;
+                                                  margin: 15px;
+                                                  border-radius: 40%;
+                                              border: 2px solid white;" >
+                <div class="inputContainer">
+                    <input type="text" id="name" name="name" class="input">
+                    <label for="name">Username</label>
+                    <span>Username</span>
+                </div>
+                <div class="inputContainer">
+                    <input type="email" id="email" name="email" class="input">
+                    <label for="email">Email</label>
+                    <span>Email</span>
+                </div>
+                <div class="inputContainer">
+                    <input type="tel" id="phone" name="phone" class="input">
+                    <label for="phone">Phone</label>
+                    <span>Phone</span>
+                </div>
+                <div class="inputContainer textarea ">
+                     <textarea name="message" id="message" class="input"></textarea>
+                     <label for="message">Message</label>
+                     <span>Message</span>
+                </div>
+                <input type="submit" value="Submit" class="button">
+               </form>
+
+            </div>
+     </div>
+        </div> 
+     <!-- footer section -->
+     <footer class="foot">
+        
+        <div class="footCont">
+
+            <div class="foot-section">
+                <h3>HELP</h3>
+                <p>ecomart01@gmail.com</p>
+                <p>+977 9852076544</p>
+                <p>+977 9801256767</p>
+            </div>
+
+            <div class="foot-section">
+               <h3>Social</h3>
+               <div class="socialIcons">
+                 <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                 <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+               </div>
+            </div>
+        </div>
+
+        <div class="footBottom">
+            <p>&copy; 2026 Eco-Mart. All rights reserved.</p>
+        </div>
+     </footer>
+
+     <!--JS-->
+     <script>
+        function validateform(){
+            var x = document.forms['formValid']['name'].value
+            var y = document.forms['formValid']['email'].value
+            var z = document.forms['formValid']['phone'].value
+            var a = document.forms['formValid']['message'].value
+
+            if(x==""||y==""||z==""||a==""){
+                alert("Empty Fields!!")
+            }
+            else{
+                alert("Thank you! Your form is submitted successfully!")
+            }
+        }
+     </script>
+</body>
+</html> 

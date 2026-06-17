@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tote-Bag Single Product</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- page wrapper for shadow -->
+     <div class="page-wrapper">
+
+        <!-- header -->
+     <header class="header">
+        <img src="image/Eco mart logo.png" alt="logo">
+        <nav>
+            <ul id="navBar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="blogs.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="AboutUs.html">AboutUs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                     <input placeholder="Search your products here..........">       
+                </li>
+               <div  class="pro" onclick="window.location.href='login.html'">
+                <li><a href="login.html" class="icon" title="login"><i class="fa-solid fa-user"></i></a></li>
+                </div>
+                <li><a href="wishlist.html" class="icon" title="wishlist"><i class="fa-solid fa-heart"></i></a></li>
+                 <div class="pro" onclick="window.location.href='cart.html'">
+                <li><a href="cart.html" class="icon" title="cart"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+                </div>
+            </ul>
+        </nav>
+        <!-- <div id="mobile">
+         <i id="bar" class="fas fa-outdent"></i>
+        </div> -->
+     </header>
+
+       <section id="prodetails" class="section-p1">
+
+         <div class="single-pro-image">
+          <img src="image/tote (1).jpg" width="100%" id="MainImg" alt="product">
+         </div>
+
+         <div class="single-pro-details">
+            <h5>Home / Products</h5>
+            <h3>Organic cotton tote bag</h3>
+            <h2>Rs.925</h2>
+           <input type="number" value="1" >
+           <button class="normal" id="addCart" style="margin-right: 10px;">Add To Cart</button>
+           <button class="normal" id="addWishlist" >Add To Wishlist</button>
+           <button class="buy" id="shop" >Buy Now</button>
+           <h4>Product Details</h4>
+           <span>The Organic Cotton Tote Bag is reusable, long-lasting, and environmentally responsible because it is made entirely of natural cotton. Its strong yet lightweight design makes it ideal for casual outings, everyday shopping, and carrying literature. It provides comfort and lessens the need for plastic bags thanks to its breathable fabric and gentle texture. This tote bag is a great option for anyone who wants to balance functionality with environmental responsibility because it is both fashionable and sustainable.</span>
+         </div>
+       </section>
+
+       <!-- products section -->
+     <section id="product1" class="section-p1">
+       <h1>New Arrivals</h1>
+       <p>"Fresh Finds, Just In!"</p>
+
+       <div class="container">
+          
+        <!-- product card -->
+         <div class="pro">
+           <img src="image/tote2.jpg" alt="Jute tote">
+           <div class="des">
+             <h5>Jute tote bag</h5>
+             <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+             </div>
+             <h4>Rs.1275</h4>
+           </div>
+            <a href="cart.html" class="icon" title="cart"><i class="fa-solid fa-cart-arrow-down"></i></a>
+         </div>
+
+         <div class="pro">
+           <img src="image/toteb.jpg" alt="cotton mesh tote">
+           <div class="des">
+             <h5>Cotton mesh tote</h5>
+             <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+             </div>
+             <h4>Rs.1050</h4>
+           </div>
+           <a href="cart.html" class="icon" title="cart"><i class="fa-solid fa-cart-arrow-down"></i></a>
+         </div>
+
+         <div class="pro">
+           <img src="image/ToteBag.jpg" alt="leaf printed tote">
+           <div class="des">
+             <h5>Leaf printed organic tote</h5>
+             <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+             </div>
+             <h4>Rs.1400</h4>
+           </div>
+            <a href="cart.html" class="icon" title="cart"><i class="fa-solid fa-cart-arrow-down"></i></a>
+         </div>
+   </div>
+  </div>
+    <!-- footer section -->
+     <footer class="foot">
+        
+        <div class="footCont">
+
+            <div class="foot-section">
+                <h3>HELP</h3>
+                <p>ecomart01@gmail.com</p>
+                <p>+977 9852076544</p>
+                <p>+977 9801256767</p>
+            </div>
+
+            <div class="foot-section">
+               <h3>Social</h3>
+               <div class="socialIcons">
+                 <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                 <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+               </div>
+            </div>
+        </div>
+
+        <div class="footBottom">
+            <p>&copy; 2026 Eco-Mart. All rights reserved.</p>
+        </div>
+
+     </footer>
+
+      <script>
+         document.getElementById("addCart").addEventListener("click", function(){
+          alert("Added to cart successfully.");
+         });
+
+         document.getElementById("addWishlist").addEventListener("click", function(){
+          alert("Added to wishlist successfully.");
+         });
+
+         document.getElementById("shop").addEventListener("click", function(){
+          alert("Thankyou for buying.");
+         });
+
+     </script>
+</body>
+</html>

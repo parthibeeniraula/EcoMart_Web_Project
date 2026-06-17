@@ -1,0 +1,268 @@
+:root {
+  --green: green;
+  --black: #130f40;
+  --box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: cursive;
+  background: #EBE1D1;
+  margin-top: -5vh;
+}
+
+.page-wrapper {
+  border: 27px solid rgba(0,0,0,0.1);
+  background-color: #EBE1D1;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 70px;
+  background: #0D4715;
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+}
+
+.header img {
+  width: 80px;
+  filter: brightness(0) invert(1);
+}
+
+#navBar {
+  display: flex;
+  align-items: center;
+}
+
+#navBar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navBar li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e5e8e1;
+  transition: 0.3s ease;
+}
+
+#navBar li a:hover {
+  color: #FE752D;
+  transform: scale(1.2);
+}
+
+#navBar li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: rgb(255,166,0);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+#navBar li a.active::after,
+#navBar li a:hover::after {
+  width: 100%;
+}
+
+/* TEAM SECTION */
+.team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 120px;
+  padding: 20px;
+}
+
+.team h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  color: #0D4715;
+  margin-bottom: 40px;
+}
+
+.teamMember {
+  text-align: center;
+}
+
+.teamMember a {
+  text-decoration: none;
+  color: #0D4715;
+  font-weight: bold;
+  display: block;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #0D4715;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+/* IMPACT + WHO WE ARE */
+.memberInfo {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 50px;
+  margin: 80px auto;
+  padding: 30px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+}
+
+.informationBox {
+  flex: 1 1 48%;
+  border: 2px dashed #0D4715;
+  padding: 30px;
+  background-color: #f5e9d8;
+  box-shadow: var(--box-shadow);
+}
+
+.informationBox h3 {
+  text-align: center;
+  font-size: 36px;
+  color: #0D4715;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.informationBox p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #130f40;
+  margin-bottom: 15px;
+}
+ 
+.profile-section {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  background-color: #EBE1D1;
+  border: 2px solid #0D4715;
+  padding: 30px;
+  gap: 40px;
+  box-shadow: var(--box-shadow);
+  max-width: 900px;
+}
+
+.profile-photo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid #0D4715;
+  object-fit: cover;
+}
+
+.profile-info {
+  background-color: #f5e9d8;
+  padding: 20px;
+  border: 1px solid #0D4715;
+  width: 100%;
+}
+
+.profile-info h3 {
+  font-size: 28px;
+  color: #0D4715;
+  margin-bottom: 15px;
+}
+
+.profile-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #130f40;
+}
+
+.icons a {
+  color: #3571e8;
+  font-size: 2rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color:  #0a2d74;
+}
+
+
+/* FOOTER */
+.foot {
+  background-color: #0D4715;
+  color: #e5e8e1;
+  box-shadow: var(--box-shadow);
+  padding: 40px 20px 20px;
+  margin-top: 0;
+}
+
+.footCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.foot-section h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.foot-section p {
+  font-size: 1.6rem;
+  margin: 6px 0;
+}
+
+.socialIcons a {
+  color: #e5e8e1;
+  font-size: 2rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #FE752D;
+}
+
+.footBottom {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 15px;
+  font-size: 1.7rem;
+}
